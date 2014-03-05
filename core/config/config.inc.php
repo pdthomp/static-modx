@@ -2,13 +2,14 @@
 /**
  *  MODX Configuration file
  */
+require('db_control.php');
 $database_type = 'mysql';
 $database_server = 'localhost';
 $database_user = 'root';
 $database_password = 'n0tf0ry0u';
 $database_connection_charset = 'latin1';
-$dbase = 'modx';
-$table_prefix = 'modx_';
+$dbase = $db_name;
+$table_prefix = $db_name.'_';
 $database_dsn = 'mysql:host=localhost;dbname=modx;charset=latin1';
 $config_options = array (
 );
